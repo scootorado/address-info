@@ -24,7 +24,7 @@ def get_geo_location(config, address):
         address_match = address_matches[0]
         if address_match['coordinates']:
             coordinates = address_match.get('coordinates')
-            return coordinates
+            return (coordinates.get('x'), coordinates.get('y'))
 
     melog.error('Unable to find coordinates for address.  address=%s', address)
     exit(1)
