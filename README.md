@@ -6,6 +6,12 @@ This program will get the address from an excel spreadsheet.  Then, make a REST 
 address.  The geolocation information will be used to determine which ward the address is in based on the geospatial
 data from the City of Chicago.
 
+## To Run This On The Command Line
+- `$ source env/bin/activate`
+- `$ python main.py --help`
+- `$ python main.py -a "805 S State St, Chicago, IL, 60605"`
+- `$ deactivate`
+
 ## Additional Information
 - [City of Chicago Geographic Information Systems](https://www.cityofchicago.org/city/en/depts/doit/provdrs/gis.html)
 - [Chicago Data Portal](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Wards-2015-/sp34-6z76)
